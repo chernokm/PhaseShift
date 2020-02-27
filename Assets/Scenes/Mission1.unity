@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -670,6 +670,7 @@ MonoBehaviour:
   mushroom3: {fileID: 74241104}
   mushroom4: {fileID: 0}
   mushroom5: {fileID: 0}
+  berry1: {fileID: 0}
   audio: {fileID: 1317985352}
   thePlayer: {fileID: 1816455746}
   interactText: {fileID: 7728793724725410581}
@@ -684,9 +685,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 7682724294687611154, guid: 205a0a0b80e4dab49bb26c9a39a6fca9, type: 3}
+--- !u!54 &74241110
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74241104}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &91549233
 GameObject:
   m_ObjectHideFlags: 0
@@ -14905,7 +14922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20090
+  m_Name: pb_Mesh24960
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20118,7 +20135,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18972
+  m_Name: pb_Mesh23756
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23418,6 +23435,7 @@ MonoBehaviour:
   mushroom3: {fileID: 0}
   mushroom4: {fileID: 0}
   mushroom5: {fileID: 0}
+  berry1: {fileID: 0}
   audio: {fileID: 1317985352}
   thePlayer: {fileID: 1816455746}
   interactText: {fileID: 7728793724725410581}
@@ -23432,9 +23450,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 7682724294687611154, guid: 205a0a0b80e4dab49bb26c9a39a6fca9, type: 3}
+--- !u!54 &917231928
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917231922}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &940992721 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4366817407545858016, guid: d479326d256e0fd40ac5546cd7a8f4b6,
@@ -25136,8 +25170,8 @@ GameObject:
   - component: {fileID: 1041846807}
   - component: {fileID: 1041846806}
   - component: {fileID: 1041846805}
-  - component: {fileID: 1041846804}
   - component: {fileID: 1041846808}
+  - component: {fileID: 1041846804}
   m_Layer: 0
   m_Name: LandingSite_SCAN
   m_TagString: Untagged
@@ -25159,8 +25193,8 @@ Transform:
   m_Father: {fileID: 2014056843}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1041846804
-MeshCollider:
+--- !u!65 &1041846804
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25169,10 +25203,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 629367185}
+  serializedVersion: 2
+  m_Size: {x: 46, y: 15, z: 36.000004}
+  m_Center: {x: 23, y: 7.5, z: -18.00049}
 --- !u!114 &1041846805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25446,16 +25479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e8421b6c909345b184d0a996f7e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courtyardTrigger: {fileID: 1041846802}
-  mazeTrigger: {fileID: 1796003607}
-  forestTrigger: {fileID: 2142837772}
-  labHUBTrigger: {fileID: 1877903990}
-  templeInteriorTrigger: {fileID: 1115351871}
-  isInCourtyard: 1
-  isInMaze: 0
-  isInForest: 0
-  isInLabHUB: 0
-  isInTemple: 0
+  displayScanDevice: 1
+  scanAreaTextToDisplay: Landing Site
   scanDevice: {fileID: 1348592515}
   remainingSamplesText: {fileID: 461430149}
   scanDeviceDisplay: {fileID: 1505127163}
@@ -26362,16 +26387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e8421b6c909345b184d0a996f7e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courtyardTrigger: {fileID: 1041846802}
-  mazeTrigger: {fileID: 1796003607}
-  forestTrigger: {fileID: 2142837772}
-  labHUBTrigger: {fileID: 1877903990}
-  templeInteriorTrigger: {fileID: 1115351871}
-  isInCourtyard: 0
-  isInMaze: 0
-  isInForest: 0
-  isInLabHUB: 0
-  isInTemple: 1
+  displayScanDevice: 1
+  scanAreaTextToDisplay: Example Area
   scanDevice: {fileID: 1348592515}
   remainingSamplesText: {fileID: 461430149}
   scanDeviceDisplay: {fileID: 1505127163}
@@ -32905,6 +32922,7 @@ MonoBehaviour:
   mushroom3: {fileID: 0}
   mushroom4: {fileID: 0}
   mushroom5: {fileID: 0}
+  berry1: {fileID: 0}
   audio: {fileID: 1317985352}
   thePlayer: {fileID: 1816455746}
   interactText: {fileID: 7728793724725410581}
@@ -32919,9 +32937,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 7682724294687611154, guid: 205a0a0b80e4dab49bb26c9a39a6fca9, type: 3}
+--- !u!54 &1267295552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267295546}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1274062037
 GameObject:
   m_ObjectHideFlags: 0
@@ -34380,7 +34414,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19660
+  m_Name: pb_Mesh24452
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38753,8 +38787,8 @@ GameObject:
   - component: {fileID: 1796003612}
   - component: {fileID: 1796003611}
   - component: {fileID: 1796003610}
-  - component: {fileID: 1796003609}
   - component: {fileID: 1796003613}
+  - component: {fileID: 1796003609}
   m_Layer: 0
   m_Name: Maze_SCAN
   m_TagString: Untagged
@@ -38776,8 +38810,8 @@ Transform:
   m_Father: {fileID: 2014056843}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1796003609
-MeshCollider:
+--- !u!65 &1796003609
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -38786,10 +38820,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 1461492721}
+  serializedVersion: 2
+  m_Size: {x: 31, y: 16, z: 30}
+  m_Center: {x: 26.5, y: 8, z: -21}
 --- !u!114 &1796003610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39071,16 +39104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e8421b6c909345b184d0a996f7e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courtyardTrigger: {fileID: 1041846802}
-  mazeTrigger: {fileID: 1796003607}
-  forestTrigger: {fileID: 2142837772}
-  labHUBTrigger: {fileID: 1877903990}
-  templeInteriorTrigger: {fileID: 1115351871}
-  isInCourtyard: 0
-  isInMaze: 1
-  isInForest: 0
-  isInLabHUB: 0
-  isInTemple: 0
+  displayScanDevice: 1
+  scanAreaTextToDisplay: Maze Area
   scanDevice: {fileID: 1348592515}
   remainingSamplesText: {fileID: 461430149}
   scanDeviceDisplay: {fileID: 1505127163}
@@ -39882,16 +39907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e8421b6c909345b184d0a996f7e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courtyardTrigger: {fileID: 1041846802}
-  mazeTrigger: {fileID: 1796003607}
-  forestTrigger: {fileID: 2142837772}
-  labHUBTrigger: {fileID: 1877903990}
-  templeInteriorTrigger: {fileID: 1115351871}
-  isInCourtyard: 0
-  isInMaze: 0
-  isInForest: 0
-  isInLabHUB: 1
-  isInTemple: 0
+  displayScanDevice: 0
+  scanAreaTextToDisplay: Example Area
   scanDevice: {fileID: 1348592515}
   remainingSamplesText: {fileID: 461430149}
   scanDeviceDisplay: {fileID: 1505127163}
@@ -45289,6 +45306,61 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 868635763}
     m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3851695
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -43.09836
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.571289
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 0bac9ebca891b454bb2913f9205a68eb,
         type: 3}
       propertyPath: m_Name
@@ -45373,61 +45445,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 3.5766602
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.3851695
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -43.09836
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.571289
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 0bac9ebca891b454bb2913f9205a68eb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3199376690798021666, guid: 0bac9ebca891b454bb2913f9205a68eb,
         type: 3}
@@ -52828,6 +52845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom4
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 205a0a0b80e4dab49bb26c9a39a6fca9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pickup
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 205a0a0b80e4dab49bb26c9a39a6fca9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52950,6 +52972,7 @@ MonoBehaviour:
   mushroom3: {fileID: 0}
   mushroom4: {fileID: 2081429227}
   mushroom5: {fileID: 0}
+  berry1: {fileID: 0}
   audio: {fileID: 1317985352}
   thePlayer: {fileID: 1816455746}
   interactText: {fileID: 7728793724725410581}
@@ -52964,9 +52987,25 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 7682724294687611154, guid: 205a0a0b80e4dab49bb26c9a39a6fca9, type: 3}
+--- !u!54 &2081429232
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081429227}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2091612503
 GameObject:
   m_ObjectHideFlags: 0
@@ -53640,8 +53679,8 @@ GameObject:
   - component: {fileID: 2142837777}
   - component: {fileID: 2142837776}
   - component: {fileID: 2142837775}
-  - component: {fileID: 2142837774}
   - component: {fileID: 2142837778}
+  - component: {fileID: 2142837774}
   m_Layer: 0
   m_Name: Forest_SCAN
   m_TagString: Untagged
@@ -53663,8 +53702,8 @@ Transform:
   m_Father: {fileID: 2014056843}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2142837774
-MeshCollider:
+--- !u!65 &2142837774
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53673,10 +53712,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 574019176}
+  serializedVersion: 2
+  m_Size: {x: 37.999996, y: 16, z: 42}
+  m_Center: {x: 26.999998, y: 8, z: -20}
 --- !u!114 &2142837775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53950,16 +53988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e8421b6c909345b184d0a996f7e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courtyardTrigger: {fileID: 1041846802}
-  mazeTrigger: {fileID: 1796003607}
-  forestTrigger: {fileID: 2142837772}
-  labHUBTrigger: {fileID: 1877903990}
-  templeInteriorTrigger: {fileID: 1115351871}
-  isInCourtyard: 0
-  isInMaze: 0
-  isInForest: 1
-  isInLabHUB: 0
-  isInTemple: 0
+  displayScanDevice: 1
+  scanAreaTextToDisplay: Forest
   scanDevice: {fileID: 1348592515}
   remainingSamplesText: {fileID: 461430149}
   scanDeviceDisplay: {fileID: 1505127163}

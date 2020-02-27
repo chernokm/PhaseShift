@@ -63,6 +63,8 @@ public class ItemEvents : MonoBehaviour
     public static bool obtainedGardenKeycard = false;
     public static bool obtainedInteriorLabKeycard = false;
 
+    public System.Action OnPickup; // Observer Pattern. When obj is picked up, SCANArea picks it up.
+
     private void Start()
     {
         this.tag = "Pickup";
@@ -203,6 +205,9 @@ public class ItemEvents : MonoBehaviour
             interactText.text = "";
             berryAmount += 1;
         }
+
+        OnPickup?.Invoke(); // Null check before notifying subscribers. 
+
         //else if (gameObject == keycardTrigger1)
         //{
         //    //obtainedInteriorLabKeycard = true;
