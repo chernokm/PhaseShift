@@ -11,7 +11,7 @@ public class SCANarea : MonoBehaviour
 	[SerializeField]
 	private GameObject scanDevice;
 	[SerializeField]
-	private TextMesh remainingSamplesText;
+	private TMPro.TextMeshPro remainingSamplesText;
 
 	[SerializeField]
 	private Text scanDeviceDisplay;
@@ -28,13 +28,14 @@ public class SCANarea : MonoBehaviour
 
 		if (other.CompareTag("Player"))
 		{
+			scanDeviceDisplay.text = scanAreaTextToDisplay;
 			UpdateItemsLeftText();
 
 			if (displayScanDevice)
 			{
-				scanDevice.SetActive(true);
-				scanDeviceDisplay.text = scanAreaTextToDisplay;
+				scanDevice.SetActive(true);				
 			}
+
 			else
 			{
 				scanDevice.SetActive(false);
@@ -46,16 +47,6 @@ public class SCANarea : MonoBehaviour
 	{
 		numberOfCollectiblesInArea--;
 		UpdateItemsLeftText();
-	}
-
-	private void OnTriggerExit(Collider other)
-	{
-		if (other.CompareTag("Player"))
-		{
-			scanDevice.SetActive(false);
-			scanDeviceDisplay.text = "";
-			remainingSamplesText.text = "";
-		}
 	}
 
 	private void UpdateItemsLeftText()
