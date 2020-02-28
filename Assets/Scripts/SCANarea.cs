@@ -23,7 +23,7 @@ public class SCANarea : MonoBehaviour
 		if (other.CompareTag("Pickup"))
 		{
 			numberOfCollectiblesInArea++; // Dynamically sets how many pickups in this area TODO Won't decrement
-			other.gameObject.GetComponent<ItemEvents>().OnPickup += OnItemPickup();
+			other.gameObject.GetComponent<ItemEvents>().OnPickup += OnItemPickup;
 		}
 
 		if (other.CompareTag("Player"))
@@ -42,6 +42,12 @@ public class SCANarea : MonoBehaviour
 		}
 	}
 
+	private void OnItemPickup()
+	{
+		numberOfCollectiblesInArea--;
+		UpdateItemsLeftText();
+	}
+
 	private void OnTriggerExit(Collider other)
 	{
 		if (other.CompareTag("Player"))
@@ -49,13 +55,6 @@ public class SCANarea : MonoBehaviour
 			scanDevice.SetActive(false);
 			scanDeviceDisplay.text = "";
 			remainingSamplesText.text = "";
-		}
-		
-		if (other.CompareTag("Pickup"))
-		{
-			Debug.Log("dwdwdw");
-			numberOfCollectiblesInArea--;
-			UpdateItemsLeftText();
 		}
 	}
 
