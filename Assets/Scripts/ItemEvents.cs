@@ -41,7 +41,6 @@ public class ItemEvents : MonoBehaviour
     public GameObject mushroom3;
     public GameObject mushroom4;
     public GameObject mushroom5;
-    public GameObject berry1;
 
 	//public GameObject keycard1;
 	//public GameObject keycard2;
@@ -55,15 +54,12 @@ public class ItemEvents : MonoBehaviour
 	//public GameObject MushroomAmount;
 	public static int mushroomAmount = 0;
     public static int keycardAmount = 0;
-    public static int berryAmount = 0;
 
     //public GameObject guardianKeycard;
     public static bool obtainedGuardianKeycard = false;
     public static bool talkedToGuardian = false;
     public static bool obtainedGardenKeycard = false;
     public static bool obtainedInteriorLabKeycard = false;
-
-    public System.Action OnPickup; // Observer Pattern. When obj is picked up, SCANArea picks it up.
 
     private void Start()
     {
@@ -198,16 +194,6 @@ public class ItemEvents : MonoBehaviour
             Destroy(mushroomTrigger5);
             mushroomAmount += 1;
         }
-        else if (gameObject == berry1)
-        {
-            audio.Play();
-            Destroy(this.gameObject);
-            interactText.text = "";
-            berryAmount += 1;
-        }
-
-        OnPickup?.Invoke(); // Null check before notifying subscribers. 
-
         //else if (gameObject == keycardTrigger1)
         //{
         //    //obtainedInteriorLabKeycard = true;
@@ -216,7 +202,7 @@ public class ItemEvents : MonoBehaviour
         //    Destroy(keycardTrigger1);
         //    keycardAmount += 1;
         //    //obtainedInteriorLabKecard = true;
-
+            
         //}
         //else if (gameObject == keycardTrigger2)
         //{
@@ -226,7 +212,7 @@ public class ItemEvents : MonoBehaviour
         //    Destroy(keycardTrigger2);
         //    keycardAmount += 1;
         //    //obtainedGardenKeycard = true;
-
+            
         //}
     }
 
