@@ -5,52 +5,67 @@ using UnityEngine.UI;
 
 public class SCANarea : MonoBehaviour
 {
-	[SerializeField] private bool displayScanDevice = true;
-	[SerializeField] private string scanAreaTextToDisplay = "Example Area";
- 
+	#region triggerboxes
+	[SerializeField]
+	private GameObject courtyardTrigger;
+	[SerializeField]
+	private GameObject mazeTrigger;
+	[SerializeField]
+	private GameObject forestTrigger;
+	[SerializeField]
+	private GameObject labHUBTrigger;
+	[SerializeField]
+	private GameObject templeInteriorTrigger;
+	#endregion
+
+	#region booleanChecklist
+	[SerializeField]
+	private bool isInCourtyard;
+	[SerializeField]
+	private bool isInMaze;
+	[SerializeField]
+	private bool isInForest;
+	[SerializeField]
+	private bool isInLabHUB;
+	[SerializeField]
+	private bool isInTemple;
+	#endregion
+
 	[SerializeField]
 	private GameObject scanDevice;
 	[SerializeField]
-	private TMPro.TextMeshPro remainingSamplesText;
+	private TextMesh remainingSamplesText;
 
 	[SerializeField]
 	private Text scanDeviceDisplay;
 
-	private int numberOfCollectiblesInArea = 0;
-
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag("Pickup"))
+		if (isInCourtyard == true && isInMaze == false && isInForest == false && isInLabHUB == false && isInTemple == false)
 		{
-			numberOfCollectiblesInArea++; // Dynamically sets how many pickups in this area TODO Won't decrement
-			other.gameObject.GetComponent<ItemEvents>().OnPickup += OnItemPickup;
+			scanDevice.SetActive(true);
+			scanDeviceDisplay.text = "Courtyard";
+			remainingSamplesText.text = "0";
 		}
-
-		if (other.CompareTag("Player"))
+		else if (isInCourtyard == false && isInMaze == true && isInForest == false && isInLabHUB == false && isInTemple == false)
 		{
-			scanDeviceDisplay.text = scanAreaTextToDisplay;
-			UpdateItemsLeftText();
-
-			if (displayScanDevice)
-			{
-				scanDevice.SetActive(true);				
-			}
-
-			else
-			{
-				scanDevice.SetActive(false);
-			}
+			scanDeviceDisplay.text = "Hedge Maze";
+			remainingSamplesText.text = "2";
 		}
-	}
-
-	private void OnItemPickup()
-	{
-		numberOfCollectiblesInArea--;
-		UpdateItemsLeftText();
-	}
-
-	private void UpdateItemsLeftText()
-	{
-		remainingSamplesText.text = numberOfCollectiblesInArea.ToString();
+		else if (isInCourtyard == false && isInMaze == false && isInForest == true && isInLabHUB == false && isInTemple == false)
+		{
+			scanDeviceDisplay.text = "Forest";
+			remainingSamplesText.text = "1";
+		}
+		else if (isInCourtyard == false && isInMaze == false && isInForest == false && isInLabHUB == true && isInTemple == false)
+		{
+			scanDevice.SetActive(false);
+			scanDeviceDisplay.text = "Lab HUB";
+		}
+		else if (isInCourtyard == false && isInMaze == false && isInForest == false && isInLabHUB == false && isInTemple == true)
+		{
+			scanDeviceDisplay.text = "Temple";
+			remainingSamplesText.text = "1";
+		}
 	}
 }
