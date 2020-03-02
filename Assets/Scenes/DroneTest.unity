@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9caef0799a8174eb0cb8b8aed02baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 1816455746}
-  droneCamera: {fileID: 1191109030}
+  playerObject: {fileID: 1816455749}
+  droneObject: {fileID: 1191109033}
 --- !u!4 &34071848
 Transform:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118333910}
   m_LocalRotation: {x: -0.11639946, y: 0.78965896, z: -0.15812682, w: 0.5812794}
-  m_LocalPosition: {x: 0.21875007, y: 0.2784693, z: -0.7934016}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.50000095, y: 0.5, z: 0.50000095}
   m_Children: []
   m_Father: {fileID: 1577926701}
@@ -723,7 +723,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!23 &118333914
 MeshRenderer:
@@ -11041,12 +11041,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1191109030 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+--- !u!114 &1191109033 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
     type: 3}
   m_PrefabInstance: {fileID: 2021871658}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1204294894 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7774074400736602524, guid: d479326d256e0fd40ac5546cd7a8f4b6,
@@ -29586,6 +29592,10 @@ PrefabInstance:
       propertyPath: m_MouseLook.lockCursor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -29593,6 +29603,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Name
       value: DroneCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29637,6 +29651,10 @@ PrefabInstance:
     - target: {fileID: 5400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}

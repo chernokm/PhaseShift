@@ -6,15 +6,20 @@ public class DroneSwap : MonoBehaviour
 {
 	//These are the cameras
 	[SerializeField]
-	private GameObject playerCamera;
+	private UnityStandardAssets.Characters.FirstPerson.FirstPersonController playerObject;
+	private Camera playerCam;
 	[SerializeField]
-	private GameObject droneCamera;
+	private UnityStandardAssets.Characters.FirstPerson.FirstPersonController droneObject;
+	private Camera droneCam;
 
 	private bool isInPlayerEyes = true;
 
 	private void Start()
 	{
-		droneCamera.SetActive(false);
+		droneObject.enabled = false;
+		playerCam = playerObject.GetComponentInChildren<Camera>();
+		droneCam = droneObject.GetComponentInChildren<Camera>();
+		droneCam.enabled = false;		
 	}
 
 	private void Update()
@@ -29,16 +34,30 @@ public class DroneSwap : MonoBehaviour
 			switch (isInPlayerEyes)
 			{
 				case true:
-					playerCamera.SetActive(false);
-					droneCamera.SetActive(true);
-					isInPlayerEyes = false;
+					EnableDroneDisablePlayer();
 					break;
 				case false:
-					droneCamera.SetActive(false);
-					playerCamera.SetActive(true);
-					isInPlayerEyes = true;
+					DisableDroneEnablePlayer();
 					break;
 			}
 		}
+	}
+
+	private void DisableDroneEnablePlayer()
+	{
+		droneObject.enabled = false;
+		playerObject.enabled = true;
+		isInPlayerEyes = true;
+		droneCam.enabled = false;
+		playerCam.enabled = true;
+	}
+
+	private void EnableDroneDisablePlayer()
+	{
+		droneObject.enabled = true;
+		playerObject.enabled = false;
+		droneCam.enabled = true;
+		playerCam.enabled = false;
+		isInPlayerEyes = false;
 	}
 }
