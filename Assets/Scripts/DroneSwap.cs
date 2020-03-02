@@ -10,13 +10,11 @@ public class DroneSwap : MonoBehaviour
 	[SerializeField]
 	private GameObject droneCamera;
 
-	private bool isInPlayerEyes;
-	private bool isInDroneEyes;
+	private bool isInPlayerEyes = true;
 
 	private void Start()
 	{
-		isInPlayerEyes = true;
-		isInDroneEyes = false;
+		droneCamera.SetActive(false);
 	}
 
 	private void Update()
@@ -26,19 +24,21 @@ public class DroneSwap : MonoBehaviour
 
 	private void CheckTransition()
 	{
-		if (Input.GetButtonDown("DroneAccess") && isInPlayerEyes == true && isInDroneEyes == false)
+		if (Input.GetButtonDown("DroneAccess"))
 		{
-			isInPlayerEyes = false;
-			isInDroneEyes = true;
-			playerCamera.SetActive(false);
-			droneCamera.SetActive(true);
-		}
-		else if (Input.GetButtonDown("DroneAccess") && isInDroneEyes == true && isInPlayerEyes == false)
-		{
-			isInPlayerEyes = true;
-			isInDroneEyes = false;
-			playerCamera.SetActive(true);
-			droneCamera.SetActive(false);
+			switch (isInPlayerEyes)
+			{
+				case true:
+					playerCamera.SetActive(false);
+					droneCamera.SetActive(true);
+					isInPlayerEyes = false;
+					break;
+				case false:
+					droneCamera.SetActive(false);
+					playerCamera.SetActive(true);
+					isInPlayerEyes = true;
+					break;
+			}
 		}
 	}
 }
