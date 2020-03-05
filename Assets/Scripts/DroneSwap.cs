@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DroneSwap : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class DroneSwap : MonoBehaviour
 	private UnityStandardAssets.Characters.FirstPerson.FirstPersonController droneObject;
 	private Camera droneCam;
 
+    [SerializeField]
+    private Canvas hudCanvas;
+    [SerializeField]
+    private Canvas droneCanvas;
+
 	private bool isInPlayerEyes = true;
 
 	private void Start()
@@ -19,7 +25,8 @@ public class DroneSwap : MonoBehaviour
 		droneObject.enabled = false;
 		playerCam = playerObject.GetComponentInChildren<Camera>();
 		droneCam = droneObject.GetComponentInChildren<Camera>();
-		droneCam.enabled = false;		
+		droneCam.enabled = false;
+        droneCanvas.enabled = false;
 	}
 
 	private void Update()
@@ -50,6 +57,8 @@ public class DroneSwap : MonoBehaviour
 		isInPlayerEyes = true;
 		droneCam.enabled = false;
 		playerCam.enabled = true;
+        hudCanvas.enabled = true;
+        droneCanvas.enabled = false;
 	}
 
 	private void EnableDroneDisablePlayer()
@@ -59,5 +68,7 @@ public class DroneSwap : MonoBehaviour
 		droneCam.enabled = true;
 		playerCam.enabled = false;
 		isInPlayerEyes = false;
-	}
+        hudCanvas.enabled = false;
+        droneCanvas.enabled = true;
+    }
 }
