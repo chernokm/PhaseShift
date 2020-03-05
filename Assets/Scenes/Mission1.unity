@@ -40140,6 +40140,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxInteractDistance: 3
   interactText: {fileID: 7728793724725410581}
+--- !u!114 &1816455753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816455746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef590ba734e4c14d92f593d7a360311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CrouchHeight: 0.5
+  crouchKey: 99
 --- !u!1 &1818125158 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1601297688910248152, guid: 82224d097b2c75d458d1b5195e311977,
@@ -52809,7 +52823,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: -1, y: 5.378091e+29, z: 7.34e-43, w: 1.4034e-41}
+  m_BoundingSphereOverride: {x: -2.3352592e+27, y: 1.2160091e-20, z: 0.10040315, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
