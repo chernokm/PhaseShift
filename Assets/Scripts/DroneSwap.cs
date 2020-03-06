@@ -17,7 +17,9 @@ public class DroneSwap : MonoBehaviour
     private Canvas hudCanvas;
     [SerializeField]
     private Canvas droneCanvas;
-
+	[SerializeField]
+	private DroneMovement droneMovementScript;
+	
 	private bool isInPlayerEyes = true;
 
 	private void Start()
@@ -59,6 +61,7 @@ public class DroneSwap : MonoBehaviour
 		playerCam.enabled = true;
         hudCanvas.enabled = true;
         droneCanvas.enabled = false;
+		droneMovementScript.enabled = false;
 	}
 
 	private void EnableDroneDisablePlayer()
@@ -70,5 +73,6 @@ public class DroneSwap : MonoBehaviour
 		isInPlayerEyes = false;
         hudCanvas.enabled = false;
         droneCanvas.enabled = true;
-    }
+		droneMovementScript.enabled = true;
+	}
 }
