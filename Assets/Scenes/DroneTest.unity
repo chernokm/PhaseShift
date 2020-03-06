@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -153,6 +153,7 @@ MonoBehaviour:
   droneObject: {fileID: 1191109033}
   hudCanvas: {fileID: 212100208}
   droneCanvas: {fileID: 1243426961}
+  droneMovementScript: {fileID: 1594557146}
 --- !u!4 &34071848
 Transform:
   m_ObjectHideFlags: 0
@@ -11012,7 +11013,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2021871658}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1594557141}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
@@ -18120,6 +18121,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -8742356044934437684, guid: d479326d256e0fd40ac5546cd7a8f4b6, type: 3}
+--- !u!1 &1594557141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2021871658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1594557145 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2021871658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1594557146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594557141}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb65898613bb82c4c8991e5dbc50ed1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_droneTransform: {fileID: 1594557145}
+  m_speed: 6
 --- !u!1001 &1641340104
 PrefabInstance:
   m_ObjectHideFlags: 0
