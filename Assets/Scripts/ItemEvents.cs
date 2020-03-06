@@ -42,9 +42,17 @@ public class ItemEvents : MonoBehaviour
     public GameObject mushroom4;
     public GameObject mushroom5;
 
-	//public GameObject keycard1;
-	//public GameObject keycard2;
-	#endregion
+    //public GameObject keycard1;
+    //public GameObject keycard2;
+    #endregion
+
+    [Header("What material to use when pinged by drone")]
+    [Tooltip("This script interpolates between current material and glow material")]
+    [SerializeField] private Material glowMaterial;
+    [SerializeField] private float materialTransitionMultiplier = 1f;
+    private Material startMaterial;
+    private Material currentMaterial;
+    [SerializeField] private bool isPinged = false; // TODO Take out seralization
 
 	public AudioSource audio;
 
@@ -64,6 +72,24 @@ public class ItemEvents : MonoBehaviour
     private void Start()
     {
         this.tag = "Pickup";
+        currentMaterial = GetComponent<Renderer>().material;
+        startMaterial = currentMaterial;
+        isPinged = true;
+    }
+
+    private void Update()
+    {
+        if (isPinged)
+        {
+            currentMaterial = glowMaterial;
+            Debug.Log(glowMaterial);
+            Debug.Log(currentMaterial);
+            currentMaterial.Lerp(currentMaterial, startMaterial, materialTransitionMultiplier * Time.deltaTime);
+            if (currentMaterial == startMaterial)
+            {
+                isPinged = false;
+            }
+        }
     }
 
     void OnTriggerEnter(Collider other)
