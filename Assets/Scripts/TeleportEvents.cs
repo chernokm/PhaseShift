@@ -11,12 +11,16 @@ public class TeleportEvents : MonoBehaviour
     public GameObject teleportTrigger4;
     public GameObject teleportTrigger5;
     public GameObject teleportTrigger6;
+    public GameObject teleportTrigger7; // NEW [ for easter egg ]
+    public GameObject teleportTrigger8; // NEW
     public GameObject teleportTarget1;
     public GameObject teleportTarget2;
     public GameObject teleportTarget3;
     public GameObject teleportTarget4;
     public GameObject teleportTarget5;
     public GameObject teleportTarget6;
+    public GameObject teleportTarget7; // NEW 
+    public GameObject teleportTarget8; // NEW
 
     //NEW TRIGGERS
     public GameObject hackingTerminalTrigger;
@@ -38,6 +42,8 @@ public class TeleportEvents : MonoBehaviour
     public bool teleportTriggerBool4 = false;
     public bool teleportTriggerBool5 = false;
     public bool teleportTriggerBool6 = false;
+    public bool teleportTriggerBool7 = false; // NEW
+    public bool teleportTriggerBool8 = false; // NEW
 
     private bool canTeleport = false;
 
@@ -82,6 +88,16 @@ public class TeleportEvents : MonoBehaviour
         else if (gameObject == hackingTerminalTrigger)
         {
             interactText.text = "[ press F to hack the terminal ]";
+        }
+        else if (gameObject == teleportTrigger7)
+        {
+            teleportTriggerBool7 = true;
+        }
+        else if (gameObject == teleportTrigger8)
+        {
+            teleportTriggerBool8 = true;
+            interactText.text = "[ press F to Teleport Back ]";
+
         }
     }
 
@@ -142,6 +158,18 @@ public class TeleportEvents : MonoBehaviour
             StartCoroutine(Flash());
             Teleport();
         }
+        else if (gameObject == teleportTrigger7)
+        {
+            teleportSound.Play();
+            StartCoroutine(Flash());
+            Teleport();
+        }
+        else if (gameObject == teleportTrigger8)
+        {
+            teleportSound.Play();
+            StartCoroutine(Flash());
+            Teleport();
+        }
     }
 
     public void Teleport()
@@ -176,6 +204,17 @@ public class TeleportEvents : MonoBehaviour
             thePlayer.transform.position = teleportTarget6.transform.position;
             teleportTriggerBool6 = false;
         }
+        else if (teleportTriggerBool7 == true)
+        {
+            thePlayer.transform.position = teleportTarget7.transform.position;
+            teleportTriggerBool7 = false;
+        }
+        else if (teleportTriggerBool8 == true)
+        {
+            thePlayer.transform.position = teleportTarget8.transform.position;
+            teleportTriggerBool8 = false;
+        }
+
     }
 
     public IEnumerator Flash()

@@ -223,7 +223,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20656
+  m_Name: pb_Mesh39710
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -519,7 +519,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21386
+  m_Name: pb_Mesh40446
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -747,7 +747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103438863}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &67460587
 MonoBehaviour:
@@ -767,12 +767,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -787,6 +791,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!65 &67460588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7359,12 +7365,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -7379,6 +7389,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &227913401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6944745330739469312, guid: 82224d097b2c75d458d1b5195e311977,
@@ -7808,12 +7820,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -7828,6 +7844,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &261854907
 GameObject:
   m_ObjectHideFlags: 0
@@ -7985,7 +8003,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22076
+  m_Name: pb_Mesh41156
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13657,7 +13675,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21070
+  m_Name: pb_Mesh40126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14816,12 +14834,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -14836,6 +14858,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!136 &469892464
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15002,12 +15026,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -15022,6 +15050,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!65 &481065278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15055,7 +15085,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103438863}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482846624
 GameObject:
@@ -15451,12 +15481,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -15471,6 +15505,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!65 &527022827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15729,6 +15765,99 @@ RectTransform:
   m_AnchoredPosition: {x: -0.91245735, y: 1.4213278}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &540470093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 540470097}
+  - component: {fileID: 540470096}
+  - component: {fileID: 540470095}
+  - component: {fileID: 540470094}
+  m_Layer: 0
+  m_Name: TeleportBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &540470094
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540470093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &540470095
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540470093}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &540470096
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540470093}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &540470097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540470093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 106.78, y: 501.35, z: 2116.4}
+  m_LocalScale: {x: 1, y: -0.17, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544738102
 GameObject:
   m_ObjectHideFlags: 0
@@ -22082,12 +22211,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -22102,6 +22235,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &714729792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6094287228686626041, guid: 82224d097b2c75d458d1b5195e311977,
@@ -22348,6 +22483,143 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -7368084790643234566, guid: d479326d256e0fd40ac5546cd7a8f4b6, type: 3}
+--- !u!1 &741400268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741400272}
+  - component: {fileID: 741400271}
+  - component: {fileID: 741400270}
+  - component: {fileID: 741400269}
+  - component: {fileID: 741400273}
+  m_Layer: 0
+  m_Name: TeleportTarget8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &741400269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741400268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &741400270
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741400268}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &741400271
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741400268}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &741400272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741400268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.869873, y: 448.39563, z: 1928.2074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1103438863}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &741400273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741400268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79291527b2b2c048974c3ce6e5eabef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTrigger1: {fileID: 222597355}
+  teleportTrigger2: {fileID: 243873253}
+  teleportTrigger3: {fileID: 712672447}
+  teleportTrigger4: {fileID: 527022825}
+  teleportTrigger5: {fileID: 1987528725}
+  teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 848918574}
+  teleportTrigger8: {fileID: 1806130998}
+  teleportTarget1: {fileID: 1706697643}
+  teleportTarget2: {fileID: 1528061114}
+  teleportTarget3: {fileID: 1728185821}
+  teleportTarget4: {fileID: 67460585}
+  teleportTarget5: {fileID: 481065276}
+  teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 833556911}
+  teleportTarget8: {fileID: 741400268}
+  hackingTerminalTrigger: {fileID: 0}
+  hackingTerminalKeycardTrigger: {fileID: 0}
+  newLabDoorTrigger: {fileID: 0}
+  thePlayer: {fileID: 1816455746}
+  interactText: {fileID: 7728793724725410581}
+  flash: {fileID: 2002641172}
+  teleportSound: {fileID: 855717087}
+  woodDoor: {fileID: 8300000, guid: 30d1f9b9f4d9a4648bac9c5e764d97ca, type: 3}
+  teleportTriggerBool1: 0
+  teleportTriggerBool2: 0
+  teleportTriggerBool3: 0
+  teleportTriggerBool4: 0
+  teleportTriggerBool5: 0
+  teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &744063750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6818229789305703801, guid: 82224d097b2c75d458d1b5195e311977,
@@ -23566,6 +23838,143 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4204145800571931109, guid: 82224d097b2c75d458d1b5195e311977, type: 3}
+--- !u!1 &833556911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 833556916}
+  - component: {fileID: 833556915}
+  - component: {fileID: 833556914}
+  - component: {fileID: 833556913}
+  - component: {fileID: 833556912}
+  m_Layer: 0
+  m_Name: TeleportTarget7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &833556912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833556911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79291527b2b2c048974c3ce6e5eabef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTrigger1: {fileID: 222597355}
+  teleportTrigger2: {fileID: 243873253}
+  teleportTrigger3: {fileID: 712672447}
+  teleportTrigger4: {fileID: 527022825}
+  teleportTrigger5: {fileID: 1987528725}
+  teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 848918574}
+  teleportTrigger8: {fileID: 1806130998}
+  teleportTarget1: {fileID: 1706697643}
+  teleportTarget2: {fileID: 1528061114}
+  teleportTarget3: {fileID: 1728185821}
+  teleportTarget4: {fileID: 67460585}
+  teleportTarget5: {fileID: 481065276}
+  teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 833556911}
+  teleportTarget8: {fileID: 741400268}
+  hackingTerminalTrigger: {fileID: 0}
+  hackingTerminalKeycardTrigger: {fileID: 0}
+  newLabDoorTrigger: {fileID: 0}
+  thePlayer: {fileID: 1816455746}
+  interactText: {fileID: 7728793724725410581}
+  flash: {fileID: 2002641172}
+  teleportSound: {fileID: 855717087}
+  woodDoor: {fileID: 8300000, guid: 30d1f9b9f4d9a4648bac9c5e764d97ca, type: 3}
+  teleportTriggerBool1: 0
+  teleportTriggerBool2: 0
+  teleportTriggerBool3: 0
+  teleportTriggerBool4: 0
+  teleportTriggerBool5: 0
+  teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
+--- !u!65 &833556913
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833556911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &833556914
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833556911}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &833556915
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833556911}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &833556916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833556911}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 81.269875, y: 443.83264, z: 2083.4773}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1103438863}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839921510
 GameObject:
   m_ObjectHideFlags: 0
@@ -23713,6 +24122,144 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -3091566613898082596, guid: 82224d097b2c75d458d1b5195e311977, type: 3}
+--- !u!1 &848918574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848918578}
+  - component: {fileID: 848918577}
+  - component: {fileID: 848918576}
+  - component: {fileID: 848918575}
+  - component: {fileID: 848918579}
+  m_Layer: 0
+  m_Name: TeleportTrigger7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &848918575
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848918574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &848918576
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848918574}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &848918577
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848918574}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &848918578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848918574}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.869873, y: 448.39563, z: 1928.2074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1103438863}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848918579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848918574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79291527b2b2c048974c3ce6e5eabef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTrigger1: {fileID: 222597355}
+  teleportTrigger2: {fileID: 243873253}
+  teleportTrigger3: {fileID: 712672447}
+  teleportTrigger4: {fileID: 527022825}
+  teleportTrigger5: {fileID: 1987528725}
+  teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 848918574}
+  teleportTrigger8: {fileID: 1806130998}
+  teleportTarget1: {fileID: 1706697643}
+  teleportTarget2: {fileID: 1528061114}
+  teleportTarget3: {fileID: 1728185821}
+  teleportTarget4: {fileID: 67460585}
+  teleportTarget5: {fileID: 481065276}
+  teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 833556911}
+  teleportTarget8: {fileID: 741400268}
+  hackingTerminalTrigger: {fileID: 0}
+  hackingTerminalKeycardTrigger: {fileID: 0}
+  newLabDoorTrigger: {fileID: 0}
+  thePlayer: {fileID: 1816455746}
+  interactText: {fileID: 7728793724725410581}
+  flash: {fileID: 2002641172}
+  teleportSound: {fileID: 855717087}
+  woodDoor: {fileID: 8300000, guid: 30d1f9b9f4d9a4648bac9c5e764d97ca, type: 3}
+  teleportTriggerBool1: 0
+  teleportTriggerBool2: 0
+  teleportTriggerBool3: 0
+  teleportTriggerBool4: 0
+  teleportTriggerBool5: 0
+  teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &855717086
 GameObject:
   m_ObjectHideFlags: 0
@@ -24939,7 +25486,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21338
+  m_Name: pb_Mesh40398
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27124,12 +27671,16 @@ Transform:
   - {fileID: 527022829}
   - {fileID: 1987528729}
   - {fileID: 469892466}
+  - {fileID: 848918578}
+  - {fileID: 1806131003}
   - {fileID: 1706697644}
   - {fileID: 1528061115}
   - {fileID: 1728185825}
   - {fileID: 67460586}
   - {fileID: 481065280}
   - {fileID: 1372522502}
+  - {fileID: 833556916}
+  - {fileID: 741400272}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33119,7 +33670,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21896
+  m_Name: pb_Mesh40972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34609,7 +35160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103438863}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1372522503
 MonoBehaviour:
@@ -34629,12 +35180,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -34649,6 +35204,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!65 &1372522504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36411,7 +36968,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103438863}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1528061116
 BoxCollider:
@@ -36452,12 +37009,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -36472,6 +37033,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &1539424729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6385140095507702708, guid: 82224d097b2c75d458d1b5195e311977,
@@ -36564,7 +37127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21790
+  m_Name: pb_Mesh40864
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38188,7 +38751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103438863}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &1706697645
 BoxCollider:
@@ -38229,12 +38792,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -38249,6 +38816,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!1 &1713870760
 GameObject:
   m_ObjectHideFlags: 0
@@ -38734,12 +39303,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -38754,6 +39327,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!65 &1728185823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38787,7 +39362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103438863}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737763570
 GameObject:
@@ -38924,7 +39499,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22406
+  m_Name: pb_Mesh41488
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40123,6 +40698,144 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805505804}
   m_Mesh: {fileID: 1131673170}
+--- !u!1 &1806130998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806131003}
+  - component: {fileID: 1806131002}
+  - component: {fileID: 1806131001}
+  - component: {fileID: 1806131000}
+  - component: {fileID: 1806130999}
+  m_Layer: 0
+  m_Name: TeleportTrigger8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1806130999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806130998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79291527b2b2c048974c3ce6e5eabef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTrigger1: {fileID: 222597355}
+  teleportTrigger2: {fileID: 243873253}
+  teleportTrigger3: {fileID: 712672447}
+  teleportTrigger4: {fileID: 527022825}
+  teleportTrigger5: {fileID: 1987528725}
+  teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 848918574}
+  teleportTrigger8: {fileID: 1806130998}
+  teleportTarget1: {fileID: 1706697643}
+  teleportTarget2: {fileID: 1528061114}
+  teleportTarget3: {fileID: 1728185821}
+  teleportTarget4: {fileID: 67460585}
+  teleportTarget5: {fileID: 481065276}
+  teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 833556911}
+  teleportTarget8: {fileID: 741400268}
+  hackingTerminalTrigger: {fileID: 0}
+  hackingTerminalKeycardTrigger: {fileID: 0}
+  newLabDoorTrigger: {fileID: 0}
+  thePlayer: {fileID: 1816455746}
+  interactText: {fileID: 7728793724725410581}
+  flash: {fileID: 2002641172}
+  teleportSound: {fileID: 855717087}
+  woodDoor: {fileID: 8300000, guid: 30d1f9b9f4d9a4648bac9c5e764d97ca, type: 3}
+  teleportTriggerBool1: 0
+  teleportTriggerBool2: 0
+  teleportTriggerBool3: 0
+  teleportTriggerBool4: 0
+  teleportTriggerBool5: 0
+  teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
+--- !u!136 &1806131000
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806130998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1806131001
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806130998}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1806131002
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806130998}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1806131003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806130998}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 81.239876, y: 443.39062, z: 2083.4639}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1103438863}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816455746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -46163,12 +46876,16 @@ MonoBehaviour:
   teleportTrigger4: {fileID: 527022825}
   teleportTrigger5: {fileID: 1987528725}
   teleportTrigger6: {fileID: 469892462}
+  teleportTrigger7: {fileID: 0}
+  teleportTrigger8: {fileID: 0}
   teleportTarget1: {fileID: 1706697643}
   teleportTarget2: {fileID: 1528061114}
   teleportTarget3: {fileID: 1728185821}
   teleportTarget4: {fileID: 67460585}
   teleportTarget5: {fileID: 481065276}
   teleportTarget6: {fileID: 1372522501}
+  teleportTarget7: {fileID: 0}
+  teleportTarget8: {fileID: 0}
   hackingTerminalTrigger: {fileID: 0}
   hackingTerminalKeycardTrigger: {fileID: 0}
   newLabDoorTrigger: {fileID: 0}
@@ -46183,6 +46900,8 @@ MonoBehaviour:
   teleportTriggerBool4: 0
   teleportTriggerBool5: 0
   teleportTriggerBool6: 0
+  teleportTriggerBool7: 0
+  teleportTriggerBool8: 0
 --- !u!136 &1987528727
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -52450,7 +53169,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21250
+  m_Name: pb_Mesh40304
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
