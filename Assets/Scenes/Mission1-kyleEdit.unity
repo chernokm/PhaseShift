@@ -11904,17 +11904,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 205a0a0b80e4dab49bb26c9a39a6fca9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 132.35765
+      value: 128.77344
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 205a0a0b80e4dab49bb26c9a39a6fca9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 51.99402
+      value: 51.992188
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 205a0a0b80e4dab49bb26c9a39a6fca9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.365356
+      value: -30.367188
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 205a0a0b80e4dab49bb26c9a39a6fca9,
         type: 3}
@@ -18190,7 +18190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: < Deposit samples
+  m_text: Deposit samples >
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18262,7 +18262,7 @@ MonoBehaviour:
     characterCount: 17
     spriteCount: 0
     spaceCount: 2
-    wordCount: 3
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -18343,16 +18343,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534716794}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -4.9790344}
-  m_LocalScale: {x: 0.060576327, y: 0.060576327, z: 0.060576327}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 1.0579596}
+  m_LocalScale: {x: 0.02, y: 0.05, z: 0.5}
   m_Children: []
   m_Father: {fileID: 954018853}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.91245735, y: 1.4213278}
+  m_AnchoredPosition: {x: -0.48978993, y: 1.6397315}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &544738102
