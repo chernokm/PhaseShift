@@ -35,6 +35,7 @@ public class PauseScreen : MonoBehaviour
 			fpsController.enabled = false;
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0;
 		}
 	}
 
@@ -45,6 +46,7 @@ public class PauseScreen : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 		pauseCanvas.enabled = false;
 		hudCanvas.enabled = true;
+        Time.timeScale = 1;
 	}
 
 	public void MainMenu()
