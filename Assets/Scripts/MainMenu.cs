@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
 
 	public void StartGame()
 	{
-		StartCoroutine("Countdown");
+		SceneManager.LoadScene(1);
 	}
 
 	public void QuitGame()
@@ -64,11 +64,5 @@ public class MainMenu : MonoBehaviour
 		audioSource.Play();
 		yield return new WaitForSeconds(0.02f);
 		flash.enabled = false;
-	}
-
-	private IEnumerator Countdown()
-	{
-		yield return new WaitForSeconds(3);
-		SceneManager.LoadScene(1);
 	}
 }

@@ -6,7 +6,10 @@ public class LabDoor : MonoBehaviour
 {
     Animator animator;
     bool doorOpen;
-    // Start is called before the first frame update
+
+	public AudioSource audio;
+
+	// Start is called before the first frame update
     void Start()
     {
         doorOpen = false;
@@ -25,6 +28,7 @@ public class LabDoor : MonoBehaviour
         {
             doorOpen = true;
             Doors("Open");
+			audio.Play();
         }
     }
 

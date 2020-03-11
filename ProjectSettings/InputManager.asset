@@ -377,7 +377,7 @@ InputManager:
     m_Name: DroneVertical
     descriptiveName: Move Drone Up/Down on Y-Axis
     descriptiveNegativeName: 
-    negativeButton: z
+    negativeButton: e
     positiveButton: q
     altNegativeButton: joystick button 2
     altPositiveButton: joystick button 3
