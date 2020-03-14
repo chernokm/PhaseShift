@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+[ExecuteInEditMode()]
 public class MainMenu : MonoBehaviour
 {
 	public void StartGame()
