@@ -9,23 +9,33 @@ public class DroneMovement : MonoBehaviour
     [SerializeField]
     private float m_speed = 2f;
 
+    [Header("Max Height Behavior")]
+    [Tooltip("How high the drone's Y transform can go before capping height")]
+    [SerializeField] private float maxHeight = 530f;
+    [Tooltip("How much force to apply in the opposite direction when player reaches max height")]
+    [Range(6f, 1000f)][SerializeField] private float yConstraintForce = 7f;
+
+    private CharacterController droneController;
+
     // Start is called before the first frame update
     void Start()
     {
+        droneController = GetComponent<CharacterController>();
         m_droneTransform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // When moving things with character controller, use the provided Move() commands. Transform.translate should be used as sparingly as possible as they disregard things like forces and collisions
     {
-        if (Input.GetAxis("DroneVertical") > 0 )
+        float inputVerticalAxis = Input.GetAxis("DroneVertical");
+        if (inputVerticalAxis != 0 )
         {
-            m_droneTransform.Translate(Vector3.up * Time.deltaTime * m_speed, Space.World);
+            droneController.Move(Vector3.up * inputVerticalAxis * m_speed * Time.deltaTime);
         }
 
-        else if (Input.GetAxis("DroneVertical") < 0)
+        if (transform.position.y > maxHeight)
         {
-            m_droneTransform.Translate(Vector3.down * Time.deltaTime * m_speed, Space.World);
+            droneController.Move(Vector3.down * yConstraintForce * Time.deltaTime);
         }
     }
 }

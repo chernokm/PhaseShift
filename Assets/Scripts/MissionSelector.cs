@@ -29,6 +29,18 @@ public class MissionSelector : MonoBehaviour
 	#endregion
 
 	public FirstPersonController fpsController;
+	private bool isMenuOpen = false;
+	private bool isPaused = false;
+
+	private void OnEnable()
+	{
+		PauseScreen.OnPause += PauseScreen_OnPause;
+	}
+
+	private void PauseScreen_OnPause(bool obj)
+	{
+		isPaused = obj;
+	}
 
 	private void Start()
 	{
@@ -53,6 +65,11 @@ public class MissionSelector : MonoBehaviour
 		}
 	}
 
+	private void Update()
+	{
+		if (Input.GetButtonDown("Cancel") && isMenuOpen) CloseMenu();
+	}
+
 	private void OnTriggerExit(Collider other)
 	{
 		interactionText.text = "";
@@ -60,6 +77,7 @@ public class MissionSelector : MonoBehaviour
 
 	public void OpenMenu()
 	{
+		isMenuOpen = true;
 		fpsController.enabled = false;
 		Cursor.visible = true;
 		Cursor.lockState = CursorLockMode.None;
@@ -70,7 +88,8 @@ public class MissionSelector : MonoBehaviour
 
 	public void CloseMenu()
 	{
-		fpsController.enabled = true;
+		isMenuOpen = false;
+		if (!isPaused) fpsController.enabled = true;
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		HUDcanvas.enabled = true;

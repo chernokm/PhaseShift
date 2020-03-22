@@ -90,7 +90,8 @@ public class TerminalInteract : MonoBehaviour
 
 	public void CloseTerminal()
 	{
-		fpsController.enabled = true;
+			fpsController.enabled = true;
+
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		hudController.enabled = true;

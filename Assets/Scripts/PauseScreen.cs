@@ -11,10 +11,9 @@ public class PauseScreen : MonoBehaviour
 	[SerializeField]
 	private Canvas pauseCanvas;
 
-	[SerializeField]
-	private FirstPersonController fpsController;
+	public static event System.Action<bool> OnPause;
 
-	//public static bool pauseScreenEnabled;
+	private bool isPaused = false;
 
 	private void Awake()
 	{
@@ -28,25 +27,27 @@ public class PauseScreen : MonoBehaviour
 
 	private void CheckIfPaused()
 	{
-		if (Input.GetButtonDown("Cancel"))
+		if (Input.GetButtonDown("Cancel") && !isPaused)
 		{
 			hudCanvas.enabled = false;
 			pauseCanvas.enabled = true;
-			fpsController.enabled = false;
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
+			OnPause(true);
             Time.timeScale = 0;
+			isPaused = true;
 		}
 	}
 
 	public void ResumeButton()
 	{
-		fpsController.enabled = true;
+		isPaused = false;
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		pauseCanvas.enabled = false;
 		hudCanvas.enabled = true;
-        Time.timeScale = 1;
+		OnPause(false);
+		Time.timeScale = 1;
 	}
 
 	public void MainMenu()

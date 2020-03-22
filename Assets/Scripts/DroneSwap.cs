@@ -18,9 +18,37 @@ public class DroneSwap : MonoBehaviour
     [SerializeField]
     private Canvas droneCanvas;
 	[SerializeField]
-	private DroneMovement droneMovementScript;
+	private DroneMovement droneMovementScript;	
 	
 	private bool isInPlayerEyes = true;
+	private bool droneAccess = false;
+
+	private void OnEnable()
+	{
+		PauseScreen.OnPause += PauseScreen_OnPause;
+		TriggerDroneUse.OnDroneAccessChange += TriggerDroneUse_OnDroneAccessChange;
+	}
+
+	private void TriggerDroneUse_OnDroneAccessChange(bool LocationDroneAccess)
+	{
+		droneAccess = LocationDroneAccess;
+	}
+
+	private void PauseScreen_OnPause(bool obj)
+	{
+		switch (obj)
+		{
+			case true:
+				if (isInPlayerEyes) playerObject.enabled = false;
+				else droneObject.enabled = false;
+				break;
+
+			case false:
+				if (isInPlayerEyes) playerObject.enabled = true;
+				else droneObject.enabled = true;
+				break;
+		}
+	}
 
 	private void Start()
 	{
@@ -38,18 +66,21 @@ public class DroneSwap : MonoBehaviour
 
 	private void CheckTransition()
 	{
-		if (Input.GetButtonDown("DroneAccess"))
+		if (droneAccess)
 		{
-			switch (isInPlayerEyes)
+			if (Input.GetButtonDown("DroneAccess"))
 			{
-				case true:
-					EnableDroneDisablePlayer();
-					break;
-				case false:
-					DisableDroneEnablePlayer();
-					break;
+				switch (isInPlayerEyes)
+				{
+					case true:
+						EnableDroneDisablePlayer();
+						break;
+					case false:
+						DisableDroneEnablePlayer();
+						break;
+				}
 			}
-		}
+		}		
 	}
 
 	private void DisableDroneEnablePlayer()
