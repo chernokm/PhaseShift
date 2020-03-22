@@ -10,6 +10,8 @@ public class PauseScreen : MonoBehaviour
 	private Canvas hudCanvas;
 	[SerializeField]
 	private Canvas pauseCanvas;
+	[SerializeField]
+	private Canvas terminalCanvas;
 
 	public static event System.Action<bool> OnPause;
 
@@ -31,6 +33,7 @@ public class PauseScreen : MonoBehaviour
 		{
 			hudCanvas.enabled = false;
 			pauseCanvas.enabled = true;
+			terminalCanvas.enabled = false;
 			Cursor.visible = true;
 			Cursor.lockState = CursorLockMode.None;
 			OnPause(true);

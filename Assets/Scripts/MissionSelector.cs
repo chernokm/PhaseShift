@@ -65,11 +65,6 @@ public class MissionSelector : MonoBehaviour
 		}
 	}
 
-	private void Update()
-	{
-		if (Input.GetButtonDown("Cancel") && isMenuOpen) CloseMenu();
-	}
-
 	private void OnTriggerExit(Collider other)
 	{
 		interactionText.text = "";

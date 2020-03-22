@@ -52,14 +52,6 @@ public class TerminalInteract : MonoBehaviour
 		audioSource = GetComponent<AudioSource>();
 	}
 
-	private void Update()
-	{
-		if (Input.GetButtonDown("Cancel"))
-		{
-			CloseTerminal();
-		}
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		interactText.text = "Press [F] to access Terminal";
@@ -90,8 +82,7 @@ public class TerminalInteract : MonoBehaviour
 
 	public void CloseTerminal()
 	{
-			fpsController.enabled = true;
-
+		fpsController.enabled = true;
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		hudController.enabled = true;
