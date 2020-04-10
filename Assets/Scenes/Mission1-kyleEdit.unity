@@ -166,7 +166,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26214
+  m_Name: pb_Mesh56550
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6075,7 +6075,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26510
+  m_Name: pb_Mesh56844
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6298,7 +6298,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26466
+  m_Name: pb_Mesh56800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27120,7 +27120,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25708
+  m_Name: pb_Mesh56042
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27719,6 +27719,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -4064481154808055279, guid: bd6b01c743e3b0f41b14302e5625ece3, type: 3}
+--- !u!223 &1010700649 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2788718791396436944, guid: 29a794a509d4e0945974aec44f71880a,
+    type: 3}
+  m_PrefabInstance: {fileID: 419236018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1011835493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4727560428418464059, guid: bd6b01c743e3b0f41b14302e5625ece3,
@@ -37181,7 +37187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564756741}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.47146, y: 42.523163, z: -19.644043}
+  m_LocalPosition: {x: -21.858961, y: 42.51065, z: -19.575317}
   m_LocalScale: {x: 1, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1671219845}
@@ -44243,7 +44249,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26008
+  m_Name: pb_Mesh56342
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51048,6 +51054,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8195515412215532700, guid: 45caa10a0ce1c124d8898eee260708e7,
+        type: 3}
+      propertyPath: assignmentCanvas
+      value: 
+      objectReference: {fileID: 143546597}
+    - target: {fileID: 8195515412215532700, guid: 45caa10a0ce1c124d8898eee260708e7,
+        type: 3}
+      propertyPath: droneCanvas
+      value: 
+      objectReference: {fileID: 1010700649}
     - target: {fileID: 8195515412587762478, guid: 45caa10a0ce1c124d8898eee260708e7,
         type: 3}
       propertyPath: m_IsActive
