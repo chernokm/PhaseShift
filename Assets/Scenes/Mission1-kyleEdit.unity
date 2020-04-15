@@ -50711,6 +50711,11 @@ PrefabInstance:
       propertyPath: droneCanvas
       value: 
       objectReference: {fileID: 1010700649}
+    - target: {fileID: 8195515412215532700, guid: 45caa10a0ce1c124d8898eee260708e7,
+        type: 3}
+      propertyPath: terminalCanvas
+      value: 
+      objectReference: {fileID: 143546597}
     - target: {fileID: 8195515412587762478, guid: 45caa10a0ce1c124d8898eee260708e7,
         type: 3}
       propertyPath: m_IsActive
