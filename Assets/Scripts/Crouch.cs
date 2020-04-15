@@ -15,7 +15,7 @@ public class Crouch : MonoBehaviour
 	}
 	void Update()
 	{
-		if(Input.GetKeyDown(crouchKey)) 
+		if(Input.GetKeyDown(crouchKey) && m_CharacterController.isGrounded) // Can only crouch when grounded 
 		{
 			m_Crouch = !m_Crouch;
 

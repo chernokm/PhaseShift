@@ -122,6 +122,7 @@ public class TeleportEvents : MonoBehaviour
 
     private void EnableTeleportation()
     {
+        
         if (gameObject == teleportTrigger1)
         {
             teleportSound.Play();
