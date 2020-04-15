@@ -41,7 +41,7 @@ public class HUDupdater : MonoBehaviour
 		}
 		else if (ItemEvents.mushroomAmount == 4)
 		{
-			primaryObjectiveText.text = "Objective Complete - Return to base";
+			primaryObjectiveText.text = "Return to Teleporter";
 			primaryObjectiveNumber.text = "";
 		}
 	}
