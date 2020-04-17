@@ -115,7 +115,8 @@ public class CreditsCutscene : MonoBehaviour
 		}
 		else if (CameraStep == 7) // Thank you message
 		{
-			SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0);
+            Application.Quit();
 		}
 	}
 
