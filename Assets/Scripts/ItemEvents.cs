@@ -46,9 +46,9 @@ public class ItemEvents : MonoBehaviour
 	//public GameObject keycard2;
 	#endregion
 
-	public AudioSource audio;
+	public new AudioSource audio;
 
-	public GameObject thePlayer;
+	public GameObject thePlayer;    
     public Text interactText;
 	
 	//public GameObject MushroomAmount;
@@ -61,8 +61,11 @@ public class ItemEvents : MonoBehaviour
     public static bool obtainedGardenKeycard = false;
     public static bool obtainedInteriorLabKeycard = false;
 
+    [SerializeField] private ParticleSystem mushroomParticles;
+
     private void Start()
     {
+        //Debug.Log(GetComponent<MeshCollider>().bounds.);
         this.tag = "Pickup";
     }
 
@@ -93,6 +96,8 @@ public class ItemEvents : MonoBehaviour
     public void ShowUIPrompt()
     {
         interactText.text = "[ Press F to pick up ]";
+        if (mushroomParticles != null)
+            mushroomParticles.Play();
     }
 
     private void OnTriggerExit(Collider other)
