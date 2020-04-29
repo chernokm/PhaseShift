@@ -24,8 +24,8 @@ public class MissionSelector : MonoBehaviour
 	private GameObject primaryObjective;
 	[SerializeField]
 	private Text interactionText;
-	//[SerializeField]
-	//private Text missionResponse;
+	[SerializeField]
+	private Text objectiveText; //ObjectiveText on Canvas (e.g.: Collect X mushrooms)
 	#endregion
 
 	public FirstPersonController fpsController;
@@ -44,6 +44,7 @@ public class MissionSelector : MonoBehaviour
 
 	private void Start()
 	{
+		objectiveText.text = $"Collect {GameObject.FindGameObjectsWithTag("Pickup").Length} Zetamelaphin Mushrooms";
 		terminalCanvas.enabled = false;
 		primaryObjective.SetActive(false);
 		teleporterLight.SetActive(false);
@@ -95,7 +96,6 @@ public class MissionSelector : MonoBehaviour
 
 	public void ChooseMission()
 	{
-		//missionResponse.text = "Mission selected - Teleporter active" + "\n" + "Collect 4 Zetamelaphin Mushrooms";
 		primaryObjective.SetActive(true);
 		teleporterLight.SetActive(true);
 		teleporterParticles.SetActive(true);
