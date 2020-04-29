@@ -48,6 +48,10 @@ public class ItemEvents : MonoBehaviour
 
 	public AudioSource audio;
 
+    [SerializeField] private Material alwaysVisible;
+    private Material originalMaterial;
+    private MeshRenderer itemRenderer;
+
 	public GameObject thePlayer;
     public Text interactText;
 	
@@ -63,7 +67,22 @@ public class ItemEvents : MonoBehaviour
 
     private void Start()
     {
-        this.tag = "Pickup";
+        this.tag = "Pickup";        
+        itemRenderer = GetComponent<MeshRenderer>();
+        originalMaterial = itemRenderer.material;
+        DroneSwap.IsInDrone += DroneSwap_IsInDrone;
+    }
+
+    private void DroneSwap_IsInDrone(bool obj)
+    {
+        if (obj)
+        {
+            itemRenderer.material = alwaysVisible;
+        }
+        else
+        {
+            itemRenderer.material = originalMaterial;
+        }
     }
 
     void OnTriggerEnter(Collider other)

@@ -18,7 +18,8 @@ public class DroneSwap : MonoBehaviour
     [SerializeField]
     private Canvas droneCanvas;
 	[SerializeField]
-	private DroneMovement droneMovementScript;	
+	private DroneMovement droneMovementScript;
+	public static event System.Action<bool> IsInDrone;
 	
 	private bool isInPlayerEyes = true;
 	private bool droneAccess = false;
@@ -74,8 +75,10 @@ public class DroneSwap : MonoBehaviour
 				{
 					case true:
 						EnableDroneDisablePlayer();
+						IsInDrone(true);
 						break;
 					case false:
+						IsInDrone(false);
 						DisableDroneEnablePlayer();
 						break;
 				}
