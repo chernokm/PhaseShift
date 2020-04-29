@@ -56,11 +56,11 @@ public class PlayerRaycastInteract : MonoBehaviour
         if (Physics.Raycast(ray, out hit, maxInteractDistance)) // When the casted out ray with limited distance var (maxInteractDis) hits something
         {
             switch (hit.collider.transform.tag) // What the ray is hitting. ie, what the player is looking at within Interact distance. This is tag based.
-            {
+            {                
                 case "Interact": // If the object's tag is "Interact"
                 case "Mission Select":
                 case "Pickup": // Or mushroom
-                    AssignInteractiveObject(hit);
+                    AssignInteractiveObject(hit);                    
                     break;
             }
         }
@@ -96,7 +96,7 @@ public class PlayerRaycastInteract : MonoBehaviour
         if (Physics.Raycast(ray, out hit, maxInteractDistance))
         {
             if (hit.transform.tag == "Untagged")
-            {
+            {                
                 currentState = LookStates.LostObject;
             }
         }
@@ -123,6 +123,6 @@ public class PlayerRaycastInteract : MonoBehaviour
                 missionSelect = hit.collider.gameObject.GetComponent<MissionSelector>();
                 missionSelect.ShowUIPrompt();
                 break;
-        }
+        }        
     }
 }
