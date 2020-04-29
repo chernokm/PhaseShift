@@ -10,36 +10,19 @@ public class HUDupdater : MonoBehaviour
 	[SerializeField]
 	private Text primaryObjectiveNumber;
 
+	public static int maxPickups; //number of objects Tagged "Pickup" in scene
+
 	private void Start()
 	{
 		primaryObjectiveText.text = "Zetamelaphin Mushrooms";
-		primaryObjectiveNumber.text = "0/4";
+		maxPickups = GameObject.FindGameObjectsWithTag("Pickup").Length;
 	}
 
 	private void Update()
 	{
-		UpdateObjectives();
-	}
-
-	private void UpdateObjectives()
-	{
-		if(ItemEvents.mushroomAmount == 0)
-		{
-			primaryObjectiveNumber.text = "0/4";
-		}
-		else if (ItemEvents.mushroomAmount == 1)
-		{
-			primaryObjectiveNumber.text = "1/4";
-		}
-		else if (ItemEvents.mushroomAmount == 2)
-		{
-			primaryObjectiveNumber.text = "2/4";
-		}
-		else if (ItemEvents.mushroomAmount == 3)
-		{
-			primaryObjectiveNumber.text = "3/4";
-		}
-		else if (ItemEvents.mushroomAmount == 4)
+		//Can put this in its own method
+		primaryObjectiveNumber.text = ItemEvents.pickupsCollected + "/" + maxPickups;
+		if (ItemEvents.pickupsCollected >= maxPickups)
 		{
 			primaryObjectiveText.text = "Return to Teleporter";
 			primaryObjectiveNumber.text = "";
