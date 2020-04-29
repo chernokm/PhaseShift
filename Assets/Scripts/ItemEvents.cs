@@ -73,6 +73,11 @@ public class ItemEvents : MonoBehaviour
         DroneSwap.IsInDrone += DroneSwap_IsInDrone;
     }
 
+    private void OnDisable()
+    {
+        DroneSwap.IsInDrone -= DroneSwap_IsInDrone;
+    }
+
     private void DroneSwap_IsInDrone(bool obj)
     {
         if (obj)
