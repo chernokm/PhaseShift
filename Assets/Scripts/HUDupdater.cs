@@ -9,10 +9,19 @@ public class HUDupdater : MonoBehaviour
 	private Text primaryObjectiveText;
 	[SerializeField]
 	private Text primaryObjectiveNumber;
+    [SerializeField]
+    private AudioClip success;
 
-	private void Start()
+    Animator anim;
+    private AudioSource audio;
+    private bool missionComplete;
+    private float duration;
+
+    private void Start()
 	{
-		primaryObjectiveText.text = "Zetamelaphin Mushrooms";
+        anim = gameObject.GetComponent<Animator>();
+        audio = gameObject.GetComponent<AudioSource>();
+        primaryObjectiveText.text = "Zetamelaphin Mushrooms";
 		primaryObjectiveNumber.text = "0/4";
 	}
 
@@ -41,9 +50,12 @@ public class HUDupdater : MonoBehaviour
 		}
 		else if (ItemEvents.mushroomAmount == 4)
 		{
-			primaryObjectiveText.text = "Return to Teleporter";
-			primaryObjectiveNumber.text = "";
+            missionComplete = true;
+            primaryObjectiveText.text = "";
+            primaryObjectiveNumber.text = "";
+            anim.SetBool("MissionIsDone", missionComplete);
+            //audio.PlayOneShot(success, 1);
+            //audio.volume = 0;
 		}
 	}
-
 }
