@@ -51,7 +51,7 @@ public class HUDupdater : MonoBehaviour
 		else if (ItemEvents.mushroomAmount == 4)
 		{
             missionComplete = true;
-            primaryObjectiveText.text = "";
+            primaryObjectiveText.text = "Return to teleporter";
             primaryObjectiveNumber.text = "";
             anim.SetBool("MissionIsDone", missionComplete);
             //audio.PlayOneShot(success, 1);
