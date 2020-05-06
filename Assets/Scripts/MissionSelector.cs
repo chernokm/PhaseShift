@@ -47,7 +47,7 @@ public class MissionSelector : MonoBehaviour
 
 	private void Start()
 	{
-		objectiveText.text = $"Collect {GameObject.FindGameObjectsWithTag("Pickup").Length} Zetamelaphin Mushrooms"; //harcoded for mushrooms at the moment
+		objectiveText.text = $"PRIMARY: Collect {GameObject.FindGameObjectsWithTag("Pickup").Length} Zetamelaphin Mushrooms"; //harcoded for mushrooms at the moment
 		terminalCanvas.enabled = false;
 		primaryObjective.SetActive(false);
 		teleporterLight.SetActive(false);
