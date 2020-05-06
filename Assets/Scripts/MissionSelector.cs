@@ -32,6 +32,9 @@ public class MissionSelector : MonoBehaviour
 	private bool isMenuOpen = false;
 	private bool isPaused = false;
 
+	[SerializeField]
+	private Text objectiveText; //"PrimaryObjectiveText" on AssignementSelectorCanvas (e.g.: Collect X mushrooms)
+
 	private void OnEnable()
 	{
 		PauseScreen.OnPause += PauseScreen_OnPause;
@@ -44,6 +47,7 @@ public class MissionSelector : MonoBehaviour
 
 	private void Start()
 	{
+		objectiveText.text = $"Collect {GameObject.FindGameObjectsWithTag("Pickup").Length} Zetamelaphin Mushrooms"; //harcoded for mushrooms at the moment
 		terminalCanvas.enabled = false;
 		primaryObjective.SetActive(false);
 		teleporterLight.SetActive(false);

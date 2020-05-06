@@ -28,7 +28,7 @@ public class ResourceDump : MonoBehaviour
 
 	private void CheckObjectivesCount()
 	{
-		if(ItemEvents.mushroomAmount == 4)
+		if(ItemEvents.pickupsCollected == 4)
 		{
 			depositText.SetActive(true);
 			readyToEnd = true;
