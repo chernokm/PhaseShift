@@ -17,45 +17,27 @@ public class HUDupdater : MonoBehaviour
     private bool missionComplete;
     private float duration;
 
+	public static int maxPickups;
+
     private void Start()
 	{
         anim = gameObject.GetComponent<Animator>();
         audio = gameObject.GetComponent<AudioSource>();
         primaryObjectiveText.text = "Zetamelaphin Mushrooms";
-		primaryObjectiveNumber.text = "0/4";
+		maxPickups = GameObject.FindGameObjectsWithTag("Pickup").Length;
 	}
 
 	private void Update()
 	{
-		UpdateObjectives();
-	}
-
-	private void UpdateObjectives()
-	{
-		if(ItemEvents.mushroomAmount == 0)
+		primaryObjectiveNumber.text = ItemEvents.pickupsCollected + "/" + maxPickups;
+		if (ItemEvents.pickupsCollected >= maxPickups)
 		{
-			primaryObjectiveNumber.text = "0/4";
-		}
-		else if (ItemEvents.mushroomAmount == 1)
-		{
-			primaryObjectiveNumber.text = "1/4";
-		}
-		else if (ItemEvents.mushroomAmount == 2)
-		{
-			primaryObjectiveNumber.text = "2/4";
-		}
-		else if (ItemEvents.mushroomAmount == 3)
-		{
-			primaryObjectiveNumber.text = "3/4";
-		}
-		else if (ItemEvents.mushroomAmount == 4)
-		{
-            missionComplete = true;
-            primaryObjectiveText.text = "Return to teleporter";
-            primaryObjectiveNumber.text = "";
-            anim.SetBool("MissionIsDone", missionComplete);
-            //audio.PlayOneShot(success, 1);
-            //audio.volume = 0;
+			missionComplete = true;
+			primaryObjectiveText.text = "Return to teleporter";
+			primaryObjectiveNumber.text = "";
+			anim.SetBool("MissionIsDone", missionComplete);
+			//audio.PlayOneShot(success, 1);
+			//audio.volume = 0;
 		}
 	}
 }
