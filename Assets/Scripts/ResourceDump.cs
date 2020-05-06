@@ -28,7 +28,7 @@ public class ResourceDump : MonoBehaviour
 
 	private void CheckObjectivesCount()
 	{
-		if(ItemEvents.pickupsCollected == 4)
+		if(ItemEvents.pickupsCollected == HUDupdater.maxPickups)
 		{
 			depositText.SetActive(true);
 			readyToEnd = true;
