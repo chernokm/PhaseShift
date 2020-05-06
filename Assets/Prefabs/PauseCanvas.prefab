@@ -80,7 +80,8 @@ MonoBehaviour:
     and the other collects the resources - use both to your advantage!
 
 
-    The Drone''s RADAR pulse has a cooldown time - use it sparingly!
+    The Drone''s RADAR system pings out samples automatically: they''ll shine white
+    through walls when in the camera.
 
 
     Look around the two planets for notes and pickups, they will be scattered between
