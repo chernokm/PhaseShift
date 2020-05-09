@@ -45,7 +45,7 @@ Material:
     - _WaveScale: 0.15
     m_Colors:
     - WaveSpeed: {r: 1, g: 2, b: -3, a: -2}
-    - _HorizonColor: {r: 0.15574937, g: 0.22556256, b: 0.26415092, a: 1}
+    - _HorizonColor: {r: 0.086997144, g: 0.1736531, b: 0.21698111, a: 1}
     - _RefrColor: {r: 0.36320752, g: 0.9225523, b: 1, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
