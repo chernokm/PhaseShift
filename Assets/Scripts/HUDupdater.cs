@@ -14,17 +14,17 @@ public class HUDupdater : MonoBehaviour
 
     Animator anim;
     private AudioSource audio;
-    private bool missionComplete;
+    private bool missionComplete = false;
     private float duration;
 
-	public static int maxPickups;
+	public static int maxPickups = 10;
 
     private void Start()
 	{
         anim = gameObject.GetComponent<Animator>();
         audio = gameObject.GetComponent<AudioSource>();
         primaryObjectiveText.text = "Zetamelaphin Mushrooms";
-		maxPickups = GameObject.FindGameObjectsWithTag("Pickup").Length;
+		//maxPickups = GameObject.FindGameObjectsWithTag("Pickup").Length;
 	}
 
 	private void Update()
